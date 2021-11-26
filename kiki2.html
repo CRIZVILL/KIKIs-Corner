@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiki</title>
+
+</head>
+
+<style>
+ /*GOOGLE Fonts:*/
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Mitr:wght@600;700&display=swap');
+/*font-family: 'Mitr', sans-serif;
+font-family: 'Roboto Slab', serif
+
+*/
+    :root{
+      --red: #E63946; --darkred:#C81927; 
+      --skin: #F6E1CB; --darkskin: #E8B98D;
+      --hair: #14253E; 
+      --cyan: #a6ddde;
+      --lpupil:#5996b2;--dpupil:#1E3848;
+      --lips:#ffc7c1;
+      --blush:#fad4c6;
+      --lshirt:#133D7C;--dshirt:#0D2852;
+      --mouth:#753a18;
+    /*cat colors*/
+      --lcatskin: #1C2335;--dcatskin: #151B28;
+      --lcatear:#604D93; --dcatear:#342A50;
+      --catnose:#151117; 
+      --eye:#f4f2ed;
+      --earl:#604D93; --eard:#342A50;
+      --size:350px;
+      --size2:400px;
+      --size3:500px;
+      --font1:'Mitr', sans-serif;
+      --font2:'Roboto Slab', serif;
+      --font3: comic sans ms;
+      --font4: Helvetica, sans-serif;
+      --shadow-1:#99836E 0px 0px 0px 1px;
+      --shadow-2:#6B5B4C 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+/* leaf-background colors*/
+
+--b1:#147a91; /* NOTE :(b) are variations of blue greens ranging from dark to light b1-b4*/
+--b2:#16909B;
+--b3:#1CA1A6;
+--b4:#52D6BF;
+--yellow-dark:#DAD7A2;
+--yellow-med:#DFDCAF;
+--yellow-light:#F4F2C9;
+--brown-light:#A69583;
+--brown-dark:#99836E;
+      } 
+  
+
+body{background-color: var(--yellow-med);}
+ @media (max-width:200px) {
+    :root {
+      --size:150px;}
+    }
+.overall-container {
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 5%;
+      background:red;
+      width: var(--size3,--size3);
+      height: var(--size,--size); 
+    }
+    .kiki-cat {
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-left: -10%;
+      width: var(--size,--size);
+      height: var(--size,--size); 
+    }
+  .HOVER-HERE{
+      top: 130%;
+      left: 39%;
+      position:absolute;
+      padding:.8em;
+      font-family:var(--font1);
+      color:#6B5C4C;
+      border-radius:50px;
+      background:var(--brown-light);
+      cursor:pointer;
+      z-index:999;
+      box-shadow: var(--shadow-1);
+      }
+    .background{
+      top: -30%;
+      left: -6%;
+      position:fixed;
+      width: 125%;
+      height:165%;
+      border-radius:6% ;
+      background:var(--yellow-light);}
+
+.title1{ 
+  font-family:var(--font4);
+  font-size:450%;
+  color:var(--yellow-dark);
+  top:45%;left:55%;
+  font-weight: bold;
+  text-align:center;
+ opacity:1;
+    }
+  .title2{ 
+  font-family:var(--font3);
+  font-size:130%;
+  color:var(--yellow-dark);
+  top:65%;left:55%;
+  font-weight: bold;
+  text-align:center;
+ opacity:1;
+    }
+      
+    .body {
+      top: 90%;
+      left: 43%;
+      background:var(--lshirt);
+      width: 28%;
+      height: 43%;
+      border-radius: 0% 70% 70% 0%;
+      opacity: 1;
+      transform: rotate(270deg);
+    } 
+      .bodydark {
+      top: 92%;
+      left: 46%;
+      background:#0B2347;
+      width: 20%;
+      height: 25%;
+      border-radius: 70% 70% 70% 70%;
+      opacity: .8;
+      transform: rotate(90deg);
+        } 
+      .neck {
+      top: 92%;
+      left: 50%;
+      background:var(--skin);
+      width: 12%;
+      height: 20%;
+      border-radius: 70% 70% 70% 70%;
+    } 
+    .neckdark {
+      top: 89%;
+      left: 50%;
+      background:#E8B98D;
+      width: 12%;
+      height: 20%;
+      border-radius: 70% 70% 70% 70%;
+    }    
+    .head{
+      top: 58%;
+      left: 34%;
+      background:var(--skin);
+      width: 45%;
+      height: 47%;
+      border-radius: 50% 50% 40% 40%;
+    } 
+    .r-ear{
+      top: 80%;
+      left: 27%;
+      background:var(--skin);
+      width: 12%;
+      height: 12%;
+      border-radius: 50% 0% 0% 50%;
+      transform: skew(10deg, 8deg); 
+    }
+    .rd-ear{
+      top: 83%;
+      left: 30%;
+      background:#E8B98D;
+      width: 8%;
+      height: 8%;
+      border-radius: 50% 0% 0% 50%;
+      transform: skew(10deg, 8deg);
+    }
+    .l-ear{
+      top: 81%;
+      left: 74%;
+      background:var(--skin);
+      width: 12%;
+      height: 12%;
+      border-radius: 0% 50% 50% 0%;
+      transform: skew(-8deg, -10deg);  
+    }
+    .ld-ear{
+      top: 84%;
+      left: 75%;
+      background:#E8B98D;
+      width: 8%;
+      height: 8%;
+      border-radius: 0% 50% 50% 0%;
+      transform: skew(-8deg, -10deg);  
+    }
+    .hair-1{
+      top: 56%;
+      left: 23%;
+      background:var(--hair);
+      width: 42%;
+      height: 47%;
+      border-radius: 120% 30% 90% 23%;
+      transform: rotate(7deg);
+      animation: hair1 ease 3s infinite;  
+    }
+    .hair-2{
+      top: 73%;
+      left: 20%;
+      background:var(--hair);
+      width: 7%;
+      height: 25%;
+      border-radius: 90% 90% 90% 90%;
+      transform: rotate(29deg);  
+    }
+    .hair-3{
+      top: 56%;
+      left: 47%;
+      background:var(--hair);
+      width: 42%;
+      height: 47%;
+      border-radius: 30% 120% 23% 90%;
+      transform: rotate(-5deg);  
+    }
+    .hair-4{
+      top: 57%;
+      left: 58%;
+      background:var(--hair);
+      width: 20%;
+      height: 12%;
+      border-radius: 0% 110% 30% 120%;
+       overflow:hidden;
+      transform: rotate(-5deg); 
+      animation: hair4 ease 2s infinite; 
+    }
+    .hair-5{
+      top: 57%;
+      left: 52%;
+      background:var(--hair);
+      width: 6%;
+      height: 14%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(15deg);
+      animation: hair5 ease 2s infinite;  
+    }
+    .hair-6{
+      top: 52%;
+      left: 38%;
+      background:var(--hair);
+      width: 13%;
+      height: 25%;
+      border-radius: 140% 50% 110% 50%;
+      overflow:hidden;
+      transform: rotate(50deg); 
+      animation: hair6 ease 2s infinite; 
+    }
+    .hair-7{
+      top: -19%;
+      left: -33%;
+      background:var(--cyan);
+      width: 150%;
+      height: 130%;
+      clip-path: polygon(37% 62%,56% 58%,78% 67%,67% 71%,50% 66%,31% 74%,21% 55%,1% 50%,10% 34%,27% 48%);
+      opacity: .4;
+      transform: rotate(-50deg);
+    }
+      .hair-9{
+      top: -115%;
+      left: 2%;
+      background:var(--cyan);
+      width: 90%;
+      height: 200%;
+      clip-path: polygon(61% 82%,68% 73%,79% 65%,81% 77%,72% 80%,66% 87%,54% 91%,45% 92%,36% 95%,50% 85%);
+      opacity: .4;
+      transform: rotate(-10deg)  
+    }
+    .nose{
+      top: 89%;
+      left: 54%;
+      background:#E8B98D;
+      width: 6%;
+      height: 4%;
+      border-radius: 50% 50% 50% 60%;  
+    }
+      .nose::before{
+      content:"";
+      top: 7%;
+      left: 0%;
+      background:var(--skin);
+      position:absolute;
+      width: 80%;
+      height: 95%;
+      border-radius: 90%;  
+    }
+    .nose::after{
+      content:"";
+      top: 25%;
+      left: 25%;
+      background:white;
+      position:absolute;
+      width: 20%;
+      height: 19%;
+      border-radius: 90%;  
+    }
+    .l-eye{
+      top: 4%;
+      left: 1%;
+      background: #f4f2ed;
+      width: 101%;
+      height: 100%;
+      border-radius: 90% 90% 90% 90%;
+        }
+      .ld-eye{
+      top: 77%;
+      left: 38.4%;
+      width: 13%;
+      height: 13%;
+      border-radius: 90% 90% 90% 90%;
+      animation:blink 2s linear infinite;  }
+      .ld-eye2{
+      top: 0%;
+      left: 0%;
+      background:var(--hair);
+      width: 102%;
+      height: 100%;
+      border-radius: 90% 90% 90% 90%;
+     }
+     .ld-eye::before{
+      content:"";
+      top: 4%;
+      left:-10%;
+      background:var(--hair);
+      width: 25%;
+      height: 20%;
+      position:absolute;
+      clip-path:polygon(0% 25%,5% 48%,17% 72%,37% 88%,57% 96%,84% 100%,100% 67%,74% 63%,51% 57%,28% 46%);
+    }
+    .ld-eye::after{
+      content:"";
+      top: 20%;
+      left: -10%;
+      background:var(--hair);
+      width: 20%;
+      height: 10%;
+      position:absolute;
+      clip-path:polygon(0% 25%,5% 48%,17% 72%,37% 88%,57% 96%,84% 100%,100% 67%,74% 63%,51% 57%,28% 46%);
+    }
+    .r-eye{
+      top: 4%;
+      left: 179%;
+      background: #f4f2ed;
+      width: 101%;
+      height: 100%;
+      border-radius: 90% 90% 90% 90%;
+       }
+    .rd-eye{
+      top: 0%;
+      left: 180%;
+      background:var(--hair);
+      width: 102%;
+      height: 100%;
+      border-radius: 90% 90% 90% 90%;
+       }
+    .rd-eye::before{
+      content:"";
+      top: 3%;
+      left: 83%;
+      background:var(--hair);
+      width: 25%;
+      height: 20%;
+      position:absolute;
+      clip-path: polygon(84% 38%,100% 21%,91% 59%,75% 82%,57% 94%,25% 100%,0% 62%,19% 62%,46% 58%,69% 50%);
+    }
+    .rd-eye::after{
+      content:"";
+      top: 20%;
+      left: 87%;
+      background:var(--hair);
+      width: 20%;
+      height: 10%;
+      position:absolute;
+      clip-path: polygon(84% 38%,100% 21%,91% 59%,75% 82%,57% 94%,25% 100%,0% 62%,19% 62%,46% 58%,69% 50%);
+    }
+.pupils{ top: 70%;
+      left: 30%;
+      width: 50%;
+      height: 20%; 
+      position:absolute;
+      animation:blink 2s linear infinite;}
+.pupil1{   top: 39%;
+      left: 24%;
+      background:linear-gradient(#1E3848, #5996b2);
+      width: 16%;
+      height: 40%;
+      border-radius: 90% 90% 90% 90%;
+      position:absolute; 
+      }
+.pupil1:before{content:""; 
+      top: 7%;
+      left: 22%;
+      background:var(--hair);
+      width: 55%;
+      height: 55%;
+      border-radius: 90% 90% 90% 90%;
+      position:absolute; 
+      }
+.pupil1:after{content:""; 
+      top: 15%;
+      left: 19%;
+      background:white;
+      width: 13%;
+      height: 13%;
+      border-radius: 50px;
+      position:absolute; 
+      }
+.pupil2{   top: 39%;
+      left: 67%;
+      background:linear-gradient(#1E3848, #5996b2);
+      width: 16%;
+      height: 40%;
+      border-radius: 90% 90% 90% 90%;
+      position:absolute; 
+      }
+.pupil2:before{content:""; 
+      top: 7%;
+      left: 20%;
+      background:var(--hair);
+      width: 55%;
+      height: 55%;
+      border-radius: 90% 90% 90% 90%;
+      position:absolute; 
+      }
+.pupil2:after{content:""; 
+      top: 15%;
+      left: 64%;
+      background:white;
+      width: 13%;
+      height: 13%;
+      border-radius: 50px;
+      position:absolute; 
+      }
+
+  
+/*hovered*/.l-brow{
+      top: 73%;
+      left: 41%;
+      background:var(--hair);
+      width: 6%;
+      height: 1.6%;
+      border-radius: 90%; 
+      transform-origin: 100% 100%;
+      transform: rotate(-10deg);}
+/*hovered*/ .r-brow{
+      top: 73%;
+      left: 65%;
+      background:var(--hair);
+      width: 6%;
+      height: 1.6%;
+      border-radius:90%; 
+      transform-origin: 100% 100%; 
+      transform: rotate(10deg);}
+      .l-blush{
+      top: 88%;
+      left: 36%;
+      background:var(--blush);
+      width: 12%;
+      height: 8%;
+      border-radius: 90% 90% 90% 90%;
+      transform: rotate(10deg)}
+      .r-blush{
+      top: 88%;
+      left: 65%;
+      background:var(--blush);
+      width: 12%;
+      height: 8%;
+      border-radius: 90% 90% 90% 90%;
+      transform: rotate(-10deg)}
+      .center{
+      top: 54%;
+      left: 53%;
+      background:var(--darkred);
+      width: 7%;
+      height: 6%;
+      border-radius: 90% 90% 90% 90%;   
+      transform: rotate(90deg);}
+      .l-ribbon{
+      top: 27%;
+      left: 30%;
+      background:var(--red);
+      width:30%;
+      height: 35%;
+      border-radius: 10% 170% 30% 120%;
+      transform-origin:100% 100%;
+      transform: rotate(-20deg) skewX(29deg);
+      animation: ribbonleft ease 7s infinite;} 
+      .r-ribbon{
+      top: 20%;
+      left: 57%;
+      background:var(--red);
+      border-radius: 170% 10% 120% 30%;
+      width: 30%;
+      height: 40%;
+      transform-origin:0 100%;
+      transform: rotate(7deg) skewX(-10deg);
+      animation: ribbonright ease 7s infinite;}
+      .ldark{
+      top: 45%;
+      left: 67%;
+      background:var(--darkred);
+      width:14%;
+      height: 70%;
+      border-radius: 40% 140% 40% 140%;
+      transform: rotate(-20deg);} 
+      .rdark{
+      top: 52%;
+      left: 20%;
+      background:var(--darkred);
+      border-radius:140% 40%;
+      width:14%;
+      height: 55%;
+      transform: rotate(30deg);}
+      .mouth{
+      top: 20%;
+      left: 15%;
+      background:#753a18;
+      border-radius:90%;
+      width: 70%;
+      height: 50%;}
+      
+/*hovered*/.lip{
+        top:96%;
+        left: 54.5%;
+        background:var(--lips);
+        border-radius:90%;
+        width: 5.5%;
+        height: 2%;
+        }
+        .lip-highlight{
+        top: 70%;
+        left: 63%;
+        background:white;
+        border-radius:90%;
+        width: 30%;
+        height: 25%;
+        transform: rotate(-20deg)}
+        
+    .l-armsleeve{
+      top: 110%;
+      left: 32%;
+      background:var(--lshirt);
+      border-radius:200% 120% 90% 90%;
+      width: 15%;
+      height: 17%;}
+    .ld-armsleeve{
+      top: 116%;
+      left: 33.5%;
+      background:var(--dshirt);
+      border-radius:120% 120% 90% 90%;
+      width: 12%;
+      height: 9%;
+      overflow:hidden;
+      }
+    .ld-armsleeve::after{
+      content: "";
+      top: -49%;
+      left: 22%;
+      background:var(--skin);
+      position:absolute;
+      width: 55%;
+      height: 150%;
+      border-radius:100%;
+       transform: rotate(13deg);}
+      .r-armsleeve{
+      top: 110.5%;
+      left: 66%;
+      background:var(--lshirt);
+      border-radius:120% 200% 90% 90%;
+      width: 15%;
+      height: 17%;}
+      .rd-armsleeve{
+      top: 116.5%;
+      left: 67%;
+      background:var(--dshirt);
+      border-radius:120% 120% 90% 90%;
+      width: 12%;
+      height: 9%;
+      overflow: hidden;
+     }
+      .rd-armsleeve::after{
+      content: "";
+      top: -51%;
+      left: 28%;
+      background:var(--skin);
+      position:absolute;
+      width: 55%;
+      height: 150%;
+      border-radius:100%;
+       transform: rotate(6deg);}
+       .l-arm{
+        top: 104%;
+        left: 39%;
+        background:var(--skin);
+        border-radius:90% 90% 80% 80%;
+        width: 8%;
+        height: 22%;
+        transform: rotate(25deg)}
+/*hovered*/.r-arm{
+        top: 103%;
+        left: 69%;
+        background:var(--skin);
+        border-radius:90% 90% 80% 80%;
+        width: 8%;
+        height: 22%;
+        transform-origin:45% 90%;
+        transform: rotate(-25deg);
+        }
+        .l-hand1{
+        top: 102.5%;
+        left: 39%;
+        background:var(--darkskin);
+        border-radius:100%;
+        width: 10%;
+        height: 4%;
+        transform: rotate(30deg)}
+        .l-hand2{
+        top: 103%;
+        left: 40%;
+        background:var(--skin);
+        border-radius:100%;
+        width: 9%;
+        height: 3.5%;
+        transform: rotate(30deg)}
+/*hovered*/  .r-hand1{
+        top: -1%;
+        left: 34%;
+        background:var(--skin);
+        border-radius:100%;
+        width: 125%;
+        height: 19%;
+        transform-origin:10% 100%;
+        box-shadow: -3px -2px var(--darkskin) inset;}
+        .catbody{
+        top: 34%;left: 45%;
+        background:var(--lcatskin);
+        border-radius:90%;
+        width: 20%;height: 40%;}
+        .cathead{
+        top: 19%;left: 45%;
+        background:var(--lcatskin);
+        border-radius:90%;
+        width: 23%;height: 18%;
+        transform: rotate(5deg);
+        animation:cathead 10s ease infinite;}
+      .cathead2{
+        top: 0%;left: 0%;
+        background:var(--lcatskin);
+        border-radius:90%;
+        width: 100%;height: 100%;
+        transform: rotate(5deg);}
+        .left-eye{
+        top: 26%;left: 10%;
+        background:var(--eye);
+        border-radius:50% 90% 20% 120%;
+        width:33%;height: 37%;
+        transform:rotate(-90deg);
+        animation: blink 3s infinite;}
+        .right-eye{
+        top: 26%;left: 58%;
+        background:var(--eye);
+        border-radius:90% 50% 120% 20%;
+        width: 33%;height: 37%;
+        animation: blink 3s infinite;
+        }
+        .lpupil{
+        top: 29%;left: 26%;
+        background:var(--lcatskin);
+        border-radius:100%;
+        width: 7%;height: 30%;
+        }
+        .left-eye-spark{
+        top: 40%;left: 19%;
+        background:white;
+        border-radius:100%;
+        width: 10%;height: 4%;
+        }
+        .rpupil{
+        top: 30%;left: 67%;
+        background:var(--lcatskin);
+        border-radius:100%;
+        width: 7%;height: 30%;
+        }
+        .right-eye-spark{
+        top: 43%;left: 60%;
+        background:white;
+        border-radius:100%;
+        width: 10%;height: 4%;
+        }
+      .left-ear{
+        top: -90%;left:5%;
+        background:var(--lcatskin);
+        border-radius:900% 100% 500% 90%;
+        width: 45%;height: 130%;
+        animation:catear 4s  ease infinite;}
+        .left-earl{
+        top:10%;left: 20%;
+        background:var(--earl);
+        border-radius:900% 100% 500% 90%;
+        width: 54%;height: 75%;
+       }
+        .left-eard{
+        top: 10%;left: 34%;
+        background:var(--eard);
+        border-radius:900% 100% 500% 90%;
+        width: 54%;height: 75%;
+        opacity:.7;}
+        .right-ear{
+        top: -1%;left: 110%;
+        background:var(--lcatskin);
+        border-radius:100% 900% 90% 500%;
+        width: 90%;height: 120%;}
+        .right-earl{
+        top: 9%;left: 130%;
+        background:var(--earl);
+        border-radius:100% 900% 90% 500%;
+        width: 50%;height:75%;}
+        .right-eard{
+        top: 9%;left: 130%;
+        background:var(--eard);
+        border-radius:100% 900% 90% 500%;
+        width: 30%;height: 75%;
+        ;opacity:.7;}
+        .catnose{
+        top: 65%;left: 43%;
+        background:var(--skin);
+        width: 15%;height: 15%; opacity:.7;
+        clip-path: polygon(63% 23%,82% 35%,91% 44%,90% 51%,57% 69%,49% 69%,11% 52%,10% 45%,24% 32%,42% 23%);}
+        .cat-mouth{
+        top: 75%;left: 41%;
+        background:pink;
+        width:17%;height: 17%; opacity:0;
+        clip-path: polygon(100% 35%,90% 53%,81% 65%,68% 74%,52% 77%,36% 73%,26% 67%,16% 58%,0% 39%,52% 9%);}
+      .cat-tail{
+        top: 28%;left: 20%;
+        fill:red;
+        fill:var(--lcatskin);
+        transform: rotate(0deg);
+        width: 35%;height: 35%;
+        animation: wiggle 3s ease infinite;}
+
+/*FACIAL EXPRESSIONS=============================================*/
+.smile{top: 93%;
+        left: 47%;
+        border-radius:20% 20% 30% 30%;
+        width: 20%;
+        height: 12%;
+        background:var(--skin);
+        position:absolute;
+        opacity:0;}
+.smile1{top: 16%;
+        left: 24%;
+        border-radius:90% 90% 100% 100%;
+        width: 50%;
+        height: 67%;
+        background:var(--lips);
+        position:absolute;
+       }     
+.smile2{top: 22%;
+        left: 17%;
+        border-radius:30% 30% 600% 600%;
+        width: 65%;
+        height: 45%;
+        background:var(--mouth);
+        position:absolute;
+        overflow:hidden;
+       }
+.smile2::before{content:"";
+        top: -40%;
+        left: 16%;
+        border-radius:20%;
+        width: 70%;
+        height: 70%;
+        background:white;
+        position:absolute;
+       }
+.smile2::after{content:"";
+        top: 55%;
+        left: 16%;
+        border-radius:90%;
+        width: 70%;
+        height: 70%;
+        background:var(--red);
+        position:absolute;
+       }
+.grin{top: 93%;
+        left: 47%;
+        border-radius:20% 20% 30% 30%;
+        width: 20%;
+        height: 12%;
+        background:var(--skin);
+        position:absolute;
+        opacity:0;} 
+.grin1{top: 20%;
+        left: 24%;
+        border-radius:90% 90% 100% 100%;
+        width: 50%;
+        height: 55%;
+        background:var(--lips);
+        position:absolute;
+       }  
+  .grin2{top: 26%;
+        left: 17%;
+        border-radius:40% 40% 90% 90%;
+        width: 65%;
+        height: 40%;
+        background:var(--mouth);
+        position:absolute;
+        overflow:hidden;
+       }
+.grin2::before{content:"";
+        top: -25%;
+        left: 10%;
+        border-radius:30%;
+        width: 80%;
+        height: 70%;
+        background:white;
+        position:absolute;
+       }
+.grin2::after{content:"";
+        top: 50%;
+        left: 13%;
+        border-radius:30%;
+        width: 75%;
+        height: 70%;
+        background:white;
+        position:absolute;
+       }
+.woah{top: -165%;
+        left: -234%;
+        border-radius:20% 20% 30% 30%;
+        width: 90%;
+        height: 70%;
+        background:var(--skin);
+        position:absolute;
+        opacity:0;}
+.woah1{top: 43%;
+        left: 35%;
+        border-radius:90% 90% 100% 100%;
+        width: 30%;
+        height: 40%;
+        background:var(--lips);
+        position:absolute;
+       }
+.woah1r::after{content:"";
+        top: -67%;
+        left: 8%;
+        border-radius:90%;
+        width: 90%;
+        height: 140%;
+        background:var(--mouth);
+        position:absolute;}      
+.woah2{top: 24%;
+        top: 15%;
+        left: 37%;
+        border-radius:90%;
+        width: 25%;
+        height: 58%;
+        background:var(--mouth);
+        position:absolute;
+        overflow:hidden;} 
+.woah2::before{content:"";
+        top: -30%;
+        left: 1%;
+        border-radius:40%;
+        width: 100%;
+        height: 50%;
+        background:white;
+        position:absolute;
+       }
+.woah2::after{content:"";
+        top: 80%;
+        left: 0%;
+        border-radius:90%;
+        width: 100%;
+        height: 70%;
+        background:var(--red);
+        position:absolute;
+       }
+/*SPEECH BALLOON==============================================*/
+.speech-balloon{
+        top: 80%;
+        left: -2%;
+        border-radius:0%;
+        width: 50%;
+        height: 25%;
+        position:absolute;
+        opacity:0;}
+ .sb1{
+        top: 20%;
+        left: -10%;
+        background:var(--b4);
+        border-radius:50px;
+        width: 90%;
+        height: 90%;
+        }
+ .sb2{
+        top: 25%;
+        left: -5%;
+        background:var(--b4);
+        border-radius:50px;
+        width: 80%;
+        height: 80%;
+}
+  .sb3{
+        top: 45%;
+        left: 5%;
+        background:var(--b1);
+        border-radius:50px;
+        width: 60%;
+        height: 40%;}
+.sb3::before{
+        content:"";
+        top: 79%;
+        left: 74%;
+        background:var(--b1);
+        border-radius:20%;
+        width: 20%;
+        height: 55%;
+        position:absolute;
+        clip-path: polygon(88% 50%,88% 73%,89% 87%,89% 93%,85% 99%,80% 100%,70% 99%,60% 91%,3% 27%,89% 23%);}
+  .sb3::after{
+        content:"";
+        top: -9%;
+        left: -1%;
+        background:white;
+        border-radius:50px;
+        width: 98%;
+        height:95%;
+        position:absolute;}
+  .sb4{top: 40%;
+        left: 4%;
+        border-radius:20%;
+        width: 59%;
+        height: 42%;
+        overflow:hidden;}
+.hello{
+      font-family:var(--font1);
+      font-size:100%;
+      color:var(--b1);
+      font-stretch:expanded;
+      top:-30%;
+      left: 22%;
+      }
+.heart-eyes{top: 76%;
+        left: 35%;
+        border-radius:20px;
+        width: 43%;
+        height: 14%;
+        position:absolute;
+        fill:var(--red);
+        opacity:0;}
+.heart-eyes1{top:7%;
+        left: 60%;
+        width: 32.5%;
+        height: 100%;
+        position:absolute;
+        overflow:hidden;
+        border-radius:90%;
+        background:white;
+        box-shadow: -.5px 2px var(--hair) inset;}
+.heart1{top: 17%;
+        left:24%;
+        width: 25px; height:25px;
+        position:absolute;
+        animation: heartbeat 2s ease infinite;}
+.heart-eyes2{top:7%;
+        left:6%;
+        width: 32.5%;
+        height: 100%;
+        position:absolute;
+        overflow:hidden;
+        border-radius:90%;
+        background:white;
+        box-shadow: .5px 2px var(--hair) inset;}
+.heart2{top: 17%;
+        left:0%;
+        width: 25px; height:25px;
+        position:absolute;
+      }
+.eyes-closed{top: 76%;
+        left: 35%;
+        border-radius:20px;
+        width: 43%;
+        height: 14%;
+        background:var(--skin);
+        position:absolute;
+        opacity:0;}
+.closed-eyes1{top:-25%;
+        left: 64%;
+        border-radius:20px;
+        width: 27%;
+        height: 120%;
+        background:var(--hair);
+        position:absolute;
+        clip-path: polygon(50% 65%, 64% 66%, 77% 71%, 87% 74%, 95% 70%, 100% 64%, 86% 66%, 95% 57%, 78% 59%, 59% 54%, 40% 54%, 26% 58%, 14% 65%, 1% 75%, 9% 75%, 23% 70%, 36% 65%);}
+ .closed-eyes2{top:-25%;
+        left: 10%;
+        border-radius:20px;
+        width: 27%;
+        height: 120%;
+        background:var(--hair);
+        position:absolute;
+        transform:scaleX(-1);
+        clip-path: polygon(50% 65%, 64% 66%, 77% 71%, 87% 74%, 95% 70%, 100% 64%, 86% 66%, 95% 57%, 78% 59%, 59% 54%, 40% 54%, 26% 58%, 14% 65%, 1% 75%, 9% 75%, 23% 70%, 36% 65%);}
+/*MENU======================================*/
+.menu-container{
+  position:absolute;
+  height:50%; width:90.5%;
+  top:100%;
+  left:81%;
+  background:;
+  border-radius:0px 0px 30px 30px;
+  animation:appear 1s linear alternate ease;
+} 
+
+.button1{
+  background:var(--brown-dark);
+  position:relative;
+  height:17%; width:18%;
+  top:121%;
+  left:90.5%;
+  border-radius:50px;
+  cursor:pointer;
+  z-index:999;
+  box-shadow: var(--shadow-1);
+}
+.button1 input {position:absolute;
+opacity:0;
+cursor:pointer;
+height:100%;
+width:100%;
+top:0%;
+left:0%;}
+.button3{
+  background:var(--brown-dark);
+  position:relative;
+  height:17%; width:18%;
+  top:121%;
+  left:145.7%;
+  border-radius:50px;
+  cursor:pointer;
+  z-index:999;
+  box-shadow: var(--shadow-1);
+}
+.button2{
+  background:var(--brown-dark);
+  position:relative;
+  height:17%; width:18%;
+  top:121%;
+  left:118%;
+  border-radius:50px;
+  cursor:pointer;
+  z-index:999;
+  box-shadow: var(--shadow-1);
+}
+
+.slidersvg{
+  fill:var(--yellow-light);
+  position:absolute;
+  height:19%; 
+  top:119.7%;
+  left:40%;
+}
+
+.icon1{
+  fill:#6B5C4C;
+  position:relative;
+  height:50%; width:50%;
+  top:25%;
+  left:25%;
+  border-radius:50px;
+  opacity:.2;}
+
+.icon2{
+  fill:#6B5C4C;
+  position:relative;
+  height:50%; width:50%;
+  top:25%;
+  left:25%;
+  border-radius:50px;
+  opacity:.2;}
+
+.icon3{
+  fill:#6B5C4C;
+  position:relative;
+  height:50%; width:50%;
+  top:25%;
+  left:25%;
+  border-radius:50px;
+  opacity:.2;}
+}
+.box1{
+  background:yellow;
+  position:absolute;
+  height:6%; width:157.5%;
+  top:118%;
+  left:14%;
+}
+.box2{
+  background:var(--brown-dark);
+  position:absolute;
+  height:6%; width:35%;
+  top:124%;
+  left:39%;
+  border-radius:50px;
+}
+.text1{
+     font-family:var(--font3);
+      font-size:100%;
+      top:105%;
+      left:115%;
+      width:35%;
+      color:var(--brown-dark);
+      opacity:0;}
+.text2{
+     font-family:var(--font3);
+      font-size:100%;
+      top:105%;
+      left:110%;
+      width:45%;
+      color:var(--brown-dark);
+      opacity:0;}
+.text3{
+     font-family:var(--font3);
+      font-size:100%;
+      top:105%;left:113%;
+      width:39%;
+      color:var(--brown-dark);
+      opacity:0;}
+.info1{
+      top:-400%;left:70%;
+      width:340%;
+      height:290%;
+      overflow:auto;
+      background:white;
+      border-radius:5px;
+      box-shadow:1px 1px 3px  black;
+      display:none;}
+.a1{  
+      font-family:var(--font3);
+      color:var(--brown-light);
+      font-size:200%;
+      top:0%; left:8%;
+      width:39%;
+    }
+.a2{ 
+   font-family:var(--font1);
+      font-size:250%;
+      color:var(--brown-light);
+      border-radius:0px 50px 50px 0px;
+      top:15%;left:8%;
+      width:90%; 
+    }
+.a3{  
+      font-family:var(--font3);
+      font-size:100%;
+      color:var(--brown-light);
+      text-align:center;
+      top:60%;left:8%;
+      width:80%;
+      text-align: center;
+     }
+.a4{  
+      font-family:var(--font3);
+      font-size:90%;
+      color:var(--brown-light);
+      text-align:center;
+      position:relative;
+      top:90%;left:9%;
+      width:80%;opacity:.4;
+     }
+.a5{  
+      font-family:var(--font3);
+      font-size:90%;
+      color:var(--brown-light);
+      position:relative;
+      text-align:center;
+      top:170%;left:9%;
+      width:80%;
+      opacity:.4;
+     }
+.a6{  
+      font-family:var(--font3);
+      color:var(--brown-light);
+      font-size:130%;
+      position:relative;
+      top:230%; left:31%;
+      width:39%;
+      opacity:1;
+    }
+
+.info3{
+      top:50%;
+      left:104%;
+      width:57%;
+      height:50%;
+      background:pink;
+      border-radius:10px;
+      opacity:0;
+      }
+
+/*HEART PATHS=====================================*/      
+
+.heart{top:400px;
+      left:520px;
+      width:50px;
+      height:100px;
+      fill:var(--red);
+      opacity:0;
+      animation:heartbeat 3s ease infinite;}
+.heart-a{top:400px;
+      left:520px;
+      width:30px;
+      height:90px;
+      fill:var(--red);
+      opacity:0;
+      animation:heartbeat 3s ease;
+      z-index:100;}
+.heart-b{top:400px;
+      left:460px;
+      width:150px;
+      height:100px;
+      fill:var(--red);
+      opacity:0;
+      animation:heartbeat 3s ease infinite;}
+.heart-c{top:400px;
+      left:520px;
+      width:50px;
+      height:100px;
+      fill:var(--red);
+      opacity:0;
+      animation:heartbeat 1s ease infinite;}
+
+/*SPEECH BALLOONS ON HOVER=====================================*/  
+
+.speech1{
+  fill:white;
+  position:absolute;
+  height:35%; width:35%;
+  top:80%;
+  left:0%;
+  filter: drop-shadow(4px 0px 0px rgba(0,0,0,.5));
+  z-index:999;
+  opacity:0;}
+.text7{ 
+   font-family:var(--font3);
+   font-size:90%;
+   color:var(--brown-light);
+   top:87%;left:8%;
+   font-weight: bold;
+   width:20%;
+   text-align:center;
+   z-index:999;opacity:0;
+    }
+.speech2{
+  fill:white;
+  position:absolute;
+  height:35%; width:35%;
+  top:80%;
+  left:0%;
+  filter: drop-shadow(4px 0px 0px rgba(0,0,0,.5));
+  z-index:999;
+  opacity:0;}
+.text8{ 
+  font-family:var(--font3);
+  font-size:90%;
+ color:var(--brown-light);
+  top:86%;left:6.5%;
+  font-weight: bold;
+  width:20%;
+  text-align:center;
+  z-index:999;opacity:0;
+    }
+.speech3{
+  fill:white;
+  position:absolute;
+  height:35%; width:35%;
+  top:80%;
+  left:0%;
+  filter: drop-shadow(4px 0px 0px rgba(0,0,0,.5));
+  z-index:999;
+  opacity:0;}
+.text9{ 
+  font-family:var(--font3);
+  font-size:90%;
+  color:var(--brown-light);
+  top:87%;left:7.5%;
+  font-weight: bold;
+  width:20%;
+  text-align:center;
+  z-index:999;opacity:0;
+    }
+.menu-containersvg{
+  position:absolute;
+  height:50%; width:170%;
+  top:113%;
+  left:10%; 
+}
+.brown-dark{fill:var(--brown-dark);}
+.brown-light{fill:var(--brown-light);}
+
+.leaf-background{
+  position:fixed;
+  height:160%; width:160%;
+  top:-55%;
+  left:60%; 
+  opacity:.3;
+  animation: sway 10s ease infinite;
+   animation-direction: alternate-reverse;
+}
+#red1{fill:var(--red);}
+#red2{fill:var(--darkred);}
+.b1{fill:var(--b1);}
+#b2{fill:var(--b2);}
+#b1{fill:var(--b1);}
+#b3{fill:var(--b3);}
+.b4{fill:var(--b4);}
+#b4{fill:var(--b4);}
+
+.leafs-container{
+  position:fixed;
+  height:145%; width:145%;
+  top:-60%;
+  left:60%; 
+}
+
+.leaf5{
+  position:absolute;
+  height:60%; width:30%;
+  top:24%;
+  left:71%; 
+  transform: rotate(-10deg);
+  animation: sway2 11s ease infinite;
+}
+.leaf5a{
+  position:absolute;
+  height:90%; width:20%;
+  top:5%;
+  left:51%;
+  transform: rotate(20deg);
+  -webkit-transform:: rotate(20deg);
+  animation: sway 20s ease infinite;
+  animation-direction: reverse;
+}
+.leaf5b{
+  position:absolute;
+  height:40%; width:15%;
+  top:20%;
+  left:35%;
+  -webkit-transform: scaleX(-1) rotate(-30deg);
+  transform: scaleX(-1) rotate(-30deg);
+
+}
+.leaf1{
+  position:absolute;
+  height:42%; width:14%;
+  top:22%;
+  left:45%;
+  transform: rotate(10deg);
+  -webkit-transform:: rotate(10deg);
+}
+.leaf1a{
+  position:absolute;
+  height:42%; width:14%;
+  top:18%;
+  left:26%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  
+}
+.leaf1b{
+  position:absolute;
+  height:100%; width:20%;
+  top:0%;
+  left:58%;
+   -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.leaf1c{
+  position:absolute;
+  height:80%; width:18%;
+  top:-15%;
+  left:76%;
+  -webkit-transform: scaleX(-1) rotate(17deg);
+  transform: scaleX(-1) rotate(17deg);
+  
+}
+
+
+.leaf3{
+  position:absolute;
+  height:65%; width:20%;
+  top:8%;
+  left:65%;
+   transform: rotate(-7deg);
+  -webkit-transform:: rotate(-7deg);
+  animation: sway2 20s ease infinite;
+  animation-direction: reverse;
+}
+.leaf3a{
+  position:absolute;
+  height:50%; width:15%;
+  top:10%;
+  left:39%;
+  transform: rotate(20deg);
+  -webkit-transform:: rotate(20deg);
+  animation: sway 11s ease infinite;
+  animation-direction: reverse;
+}
+.leaf2{
+  position:absolute;
+  height:30%; width:10%;
+  top:25%;
+  left:93%;
+  transform: rotate(-25deg);
+  -webkit-transform:: rotate(-25deg);
+}
+.leaf2a{
+  position:absolute;
+  height:50%; width:10%;
+  top:9%;
+  left:55%;
+  transform: rotate(7deg);
+  -webkit-transform:: rotate(7deg);
+  animation: sway 12s ease infinite;
+}
+
+.flower1{
+  position:absolute;
+  height:60%; width:10%;
+  top:15%;
+  left:35%;
+  -webkit-transform: scaleX(-1) rotate(-20deg);
+  transform: scaleX(-1) rotate(-20deg);
+}
+.flower1a{
+  position:absolute;
+  height:85%; width:20%;
+  top:10%;
+  left:60%;
+}
+/*WHEN HOVER-HERE BUTTON IS HOVERED==========================*/
+.HOVER-HERE:hover{transform:translate(-1px,-1px); box-shadow:var(--shadow-2);}
+.HOVER-HERE:hover~.cateyes{ top:40%;transition: 1s ease;}
+.HOVER-HERE:hover~.cathead{ top:25%; transition: 2s ease;}
+.HOVER-HERE:hover~.pupils{ top:72%; transition: 1s ease;}
+.HOVER-HERE:hover~.r-arm .r-hand1{ transform:rotate(-75deg);
+                              transition: 5s ease;}
+.HOVER-HERE~:r-arm:hover .r-hand2{ transform:rotate(-76deg);
+                          transition: 5s ease;}
+.HOVER-HERE:hover~.r-arm{transform: rotate(-90deg); transition: 2s ease-in-out;}
+.HOVER-HERE:hover~.r-brow{animation:eyebrow 10s ease infinite;}
+.HOVER-HERE:hover~.l-brow{animation:eyebrow 10s ease infinite;}
+.HOVER-HERE:hover~.lip{animation:hello 10s ease infinite;}
+.HOVER-HERE:hover~.speech-balloon{opacity: 1;animation: bounce 0.6s linear;}
+.HOVER-HERE:hover~.speech-balloon .sb1{animation:1s pop-out ease-out forwards;}
+.HOVER-HERE:hover~.speech-balloon .sb2{animation:2s pop-out ease-out forwards;
+animation-delay:;}
+
+/*WHEN CAT HEAD IS HOVERED==========================*/
+.cathead:hover{ top:25%; transition: 2s ease;}
+.cathead:hover .left-eye{border-radius:50% 40% 120% 90%;
+        width:35%;height: 23%;top: 40%;left: 10%;}
+.cathead:hover .right-eye{border-radius:40% 50% 90% 120%;
+        width:35%;height: 23%;top: 40%;left: 58%;}
+.cathead:hover .right-eye-spark{top:45%;}
+.cathead:hover .left-eye-spark{top:45%;}
+.cathead:hover .cat-mouth{ animation:meow 3s infinite ease;}
+@keyframes meow{0%,100%{opacity:.8; transform:scale(.4); }
+                  70%{ transform:scale(1.2);}}
+/*WHEN BUTTONS ARE HOVERED==========================*/
+ @keyframes float{0%{opacity:0; }
+                          100%{opacity:1; top:116%; box-shadow: var(--shadow-2);}}
+.button1:hover.button1{animation:float .3s ease;
+animation-fill-mode:forwards;animation-iteration-count:1;}
+.button2:hover.button2{animation:float .3s ease;
+animation-fill-mode:forwards;animation-iteration-count:1;}
+.button3:hover.button3{animation:float .3s ease;
+animation-fill-mode:forwards;animation-iteration-count:1;}
+
+/*HOVER  ON BUTTONS/ SLIDER EFFECTS==========================*/
+.button1:hover~.slidersvg{ left:83%; animation: .3s ease forwards alternate;}
+.button2:hover~.slidersvg{ left:110.5%; animation:slide2 ..3s ease forwards alternate;}
+.button3:hover~.slidersvg{ left:138%;animation:.3s ease forwards alternate;}
+
+/*HOVER  ON BUTTONS/ TEXTS==========================*/
+.button1:hover~.text1{ opacity:1; animation:.3s ease-in forwards;}
+.button2:hover~.text2{ opacity:1; animation:.3s ease-in forwards;}
+.button3:hover~.text3{ opacity:1; animation:.3s ease-in forwards;}
+/*HOVER  ON BUTTONS/ ICONS==========================*/
+.button1:hover .icon1{ opacity:1; animation:1s ease forwards;}
+.button2:hover .icon2{ opacity:1; animation:1s ease forwards;}
+.button3:hover .icon3{ opacity:1; animation:1s ease forwards;}
+
+.button1:hover~.pupils{ top:72%; left:31.5%;transition: .3s linear;}
+.button2:hover~.pupils{ top:72%; left:31.5%;transition: .3s linear;}
+.button3:hover~.pupils{ top:72%; left:31.5%;transition: .3s linear;}
+
+/*HOVER  ON BUTTONS/ SPEECH BALLOONS==========================*/
+.button1:hover~.speech1{opacity: 1;animation: bounce 0.6s linear;}
+.button1:hover~ .text7{opacity: 1; animation: bounce 0.6s linear;}
+
+.button2:hover~.speech2{opacity: 1;animation: bounce 0.6s linear;}
+.button2:hover~ .text8{opacity: 1;animation: bounce 0.6s linear;}
+
+.button3:active~.speech3{opacity: 1;animation: bounce 0.6s linear;}
+.button3:active~ .text9{opacity: 1;animation: bounce 0.6s linear;}
+
+/*COLOR OF BUTTONS  WHEN ACTIVE==========================*/
+.button1:active{background:var(--yellow-dark);}
+.button2:active{background:var(--yellow-dark);}
+.button3:active{background:var(--yellow-dark);}
+
+/*BUTTON 1 WHEN ACTIVE==========================*/
+.checkbox:checked~.info1{display:block !important;}
+.a2:hover{color:var(--b4); text-shadow:var(--shadow-2);transform:translate(-1px,-1px);}
+.a4:hover{color:var(--brown-dark); opacity:1;} .a5:hover{color:var(--brown-dark); opacity:1;}
+.button1:active~.pupils{ top:72%; left:31.5%;
+                          transition: .3s linear;}
+.checkbox:checked~.woah{opacity:1;}
+.button1:hover .woah{ opacity:0; animation:.3s linear forwards;}
+
+/*BUTTON 2 WHEN ACTIVE==========================*/
+.button2:active~.grin { opacity:1;}
+.button2:active~.eyes-closed{ opacity:1;}
+/*BUTTON 2 WHEN ACTIVE==========================*/
+.button3:active~.smile { opacity:1;}
+.button3:active~.heart-eyes { opacity:1;}
+.button3:active~.heart{animation:float1 2s ease-out infinite;}
+.button3:active~.heart-a{animation:float2 2s ease-out forwards;
+animation-delay:1s;}
+/*BUTTON 3 WHEN ACTIVE==========================*/
+.button3:active~.heart-b{animation:float3 2s ease-out infinite;}
+.button3:active~.heart-c{animation:float4 1s ease-out infinite;
+animation-delay:1s;}
+.button3:active~.r-arm{transform: rotate(30deg); 
+                          transition: 2s ease-in-out;}
+
+/*KEYFRAMES==============================================
+==========================================================
+KEYFRAMES*/
+@keyframes float1{0%{opacity:.5; }
+                  20%{top:300px; left:470px;}
+                  50%{top:120px; left:360x;}
+                  100%{top:0px; left:270px; transform:scale(1.7);}}
+@keyframes float2{0%{opacity:.5; }
+                  100%{top:320px; left:280px; transform:scale(1.4); opacity:.8;}}
+@keyframes float3{
+                  50%{top:259px; left:480px;opacity:.5;}
+                  100%{top:50px; left:500px; transform:scale(.3);}}
+@keyframes float4{0%{opacity:.5; }
+                    100%{top:0px; left:480px; transform:scale(1.5); opacity:0;}}
+@keyframes pop-out{0%{opacity:.5; transform:scale(.5);}
+                        10%{transform:scale(1.4)}
+                        15%{transform:scale(.6)}
+                        100%{transform:scale(1.7); opacity:0;}}
+@keyframes sway{40%{transform:rotate(-2deg) skewX(9deg) scale(.9);}
+80%{transform:rotate(3deg) skewX(5deg) scale(1.01);}
+}
+@keyframes sway2{50%{transform:rotate(-1deg)  scale(.9);}
+80%{transform:rotate(2deg)  scale(1.01);}
+}
+@keyframes heartbeat{
+                    0%{transform:scale(1.2);}
+                    20%,60%{transform:scale(.9);}
+                    40%{transform:scale(1.4);}}
+@keyframes blink{0%, 100% {transform: scale(1, .05);}
+                 5%,95% {transform: scale(1, 1);}}
+@keyframes ribbonleft {
+	0% {transform: rotate(-20deg) skewX(20deg);}
+  25% {transform: rotate(-30deg) skewX(25deg);}
+  50% {transform: rotate(-15deg)skewX(15deg);}
+  100% {transform: rotate(-30deg) skewX(20deg);}}
+@keyframes ribbonright {
+	0% {transform: rotate(7deg) skewX(-10deg);}
+  25% {transform: rotate(-5deg)skewX(-10deg);}
+  50% {transform: rotate(10deg)skewX(-5deg);}
+  100% {transform: rotate(-5deg) skewX(-10deg);}}
+@keyframes hair4 {
+	0% {transform: rotate(-5deg) scale(100%);}
+  50% {transform: rotate(-3deg) scale(110%);}
+  100% {transform: rotate(-10deg) scale(110%)}}
+@keyframes hair5 {
+	0% {transform: rotate(15deg) scale(100%);}
+  50% {transform: rotate(20deg) scale(106%);}
+  100% {transform: rotate(deg) scale(90%)}}
+  @keyframes hair6 {
+	0% {transform: rotate(50deg) scale(100%);}
+  70% {transform: rotate(60deg) scale(110%);}
+  100% {transform: rotate(deg) scale(90%)}}
+/*for the pupils or l-pupil hover*/
+@keyframes down {
+	    0% { top:0%}
+      10%,100% {top:30%}}
+ @keyframes hello {
+	0% {top:96%;left: 54.5%; width: 5.5%;height: 2%;}
+  5%{top:96%;left: 53.5%; width: 8%;height: 3%;}
+  15%{top:96%;left: 55%; width: 4%;height: 9%;}
+  20%{top:96%;left: 53%; width: 8%;height: 2%;}
+  25%{top:96%;left: 53%; width: 5.5%;height: 2%; }
+  100% {top:96%;left: 54.5%; width: 5.5%;height: 2%;}}
+@keyframes eyebrow {
+	0% {top:73%;}
+  5,15%{top:73%;}
+  20%{top:70%;}
+  25%,100% {top:73%;}}
+@keyframes catears{
+	    0%, 7% {transform: rotateZ(0);}
+      15% {transform: rotateZ(-1deg);}
+      20% {transform: rotateZ(3deg);}
+     25% {transform: rotateZ(-5deg);}
+     30% {transform: rotateZ(2deg);}
+     35% {transform: rotateZ(-3deg);}
+     40%, 100% {transform: rotateZ(0);}}
+
+@keyframes cathead{
+	    0% { transform: rotateZ(0);}
+      15% { transform: rotateZ(-1deg);}
+      20% {  transform: rotateZ(3deg);}
+     25% { transform: rotateZ(-5deg);}
+     30% {  transform: rotateZ(2deg);}
+     35% { transform: rotateZ(-3deg);}
+     40%, 100% {transform: rotateZ(0);}}
+ @keyframes wave2 {
+	0% {transform: rotateZ(3deg) translateZ(-2px);}
+	25%{transform: rotateZ(-3deg) translateZ(-.5px);}
+	50% {transform: rotateZ(2deg) translateZ(-.5px);}
+	75% {transform: rotateZ(-5deg) translateZ(-4px);}
+	100% {transform: rotateZ(3deg) translateZ(-.5px);}}
+@keyframes wiggle {
+	0%,100% {transform: rotateZ(0deg) translateZ(-2px);}
+	9%{transform: rotateZ(10deg) translateZ(-.5px);}
+	50% {transform: rotateZ(-20deg) translateZ(-.5px);}
+	60% {transform: rotateZ(15deg) translateZ(-4px);}
+	65% {transform: rotateZ(8deg) translateZ(-.5px);}}
+@keyframes bounce{
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	20% {
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.01, 1.01, 1.01);
+		transform: scale3d(1.01, 1.01, 1.01);
+	}
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+}
+/*MENU ANIMATIONS=================================*/
+@keyframes appear{
+  opacity:1;
+   animation-direction:alternate;
+
+}
+.kiki-cat * {
+      position: absolute;}
+.overall-container * {
+      position: absolute;}
+      
+    </style>
+<div class="overall-container">
+  <div class="background">
+    <p class="title1"> KIKI's </p>
+    <p class="title2"> corner </p>
+  </div>
+    <div class="kiki-cat"> 
+<div class="HOVER-HERE" >HOVER HERE</div>
+<!--CAT CHARACTER=================================================-->  
+
+    <div class="rectangle"></div> 
+    <svg version="1.1" class="leaf-background" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471 368.1" xml:space="preserve">
+	<path id="b1" d="M257,12.8c-12.3,1.7-24.6,4.1-36.6,7.3c-7,1.9-13.9,4-20.7,6.4c-3.4,1.2-6.8,2.5-10.2,3.8
+		c-0.7,0.3-1.6,0.5-2.2,0.8l-0.3-0.5c0.3-0.2,0.5-0.3,0.8-0.4c17.7-9.5,37.1-15.7,56.9-18.3c3.6-0.5,7.9-1.4,11.3,0.3
+		C256.5,12.4,256.8,12.6,257,12.8z"/>
+	<path id="b1" d="M413.5,74.9l-0.1,0.1c-1-2.1-2.3-4.1-3.2-5.6c-3.3-6.1-6.9-12.1-10.8-17.9c0.6-0.4,1.2-0.8,2-1.1
+		c0.9,1.4,1.6,3,2.4,4.4C407.1,61.5,410.4,68.1,413.5,74.9z"/>
+	<path id="b1" d="M237,83.7"/>
+	<path id="b1" d="M461.9,248.7c-1.2-1.3-2.5-2.6-3.7-4c-9.7-10.8-18.4-22.4-26-34.7c-7.7-12.4-14.2-25.4-19.6-38.9
+		c-5.4-13.5-9.6-27.4-12.6-41.6c-3-14.2-4.7-28.6-5.2-43.1c0-1.3-0.1-2.6-0.1-3.9c-0.4-0.2-0.8-0.3-1.2-0.4
+		c-4.5-1.7-9.1-3.4-13.6-5.1c-3.5-1.3-7.9-2.8-11.3-0.6c-3.7,2.5-3.7,7.8-5.5,11.9c-0.6,1.3-1.3,2.5-2.2,3.5
+		c3.9,10.1,7.3,20.4,9.9,31c7.9,32,8.2,66.9-5.6,96.8c-9.2,19.9-24.4,37-31,58c-4.3,13.6-4.8,28.2-10.6,41.2
+		c-12.1,27.2-43.3,39.5-71.5,49.2c24.4-24.2,36.5-58.3,41.9-92.2c5.4-33.9,4.9-68.4,8.1-102.6c0-10.6,2.4-21.8,4-32.2
+		c2.9-19,6.7-37.8,10.8-56.6c-13.2-1.5-26.3-3-39.5-4.5c-7-0.8-14-1.6-20.7-3.6c-15.7,52.1-43.2,100.6-79.9,140.8
+		c0.7-0.7,0.6-3.9,0.7-5c2.2-14.2,4.9-28.4,8.2-42.4c3.3-14,7.2-27.9,11.6-41.6c4.4-13.8,9.4-27.3,15-40.7c1.9-4.7,4-9.3,6-13.9
+		c-3.9-1.8-7.8-3.6-12-4c-1.9-0.2-3.7-0.1-5.6,0.1c-10.6,23-29.8,42-44.9,62.9c-10.4,14.3-19,29.9-30.4,43.3
+		c-11.4,13.4-26.4,24.9-43.9,27.5c2.1-15.8,16.8-26.1,27.6-37.8c9.9-10.9,16.8-23.9,22.9-37.3c-4.6,4.4-9.5,8.3-15.3,10.9
+		c-9.1,4.2-19.4,4.9-29.1,7.2c-14.9,3.4-28.7,10.3-43.4,14.4S13,165.9,0,158c29.6-8.5,57.1-24.4,79.1-45.9
+		c12.4-12,23.1-25.7,36.2-36.9c4.8-3.6,9.3-7.3,14.5-10.3c4.6-2.6,9.4-4.8,14.5-6.4c2.5-0.8,5.1-1.2,7.6-1.5c2.3-3,5.1-5.6,8-8
+		c8.4-7,17.5-13.2,27.1-18.4l0.3,0.5c0.6-0.3,1.5-0.5,2.2-0.8c3.4-1.3,6.8-2.6,10.2-3.8c6.8-2.4,13.7-4.5,20.7-6.4
+		c12-3.2,24.2-5.7,36.6-7.3c2-0.3,4-0.5,6-0.8c14.4-1.6,28.8-2.2,43.3-1.8c12.8,0.4,25.6,1.7,38.2,3.8c0.9-0.6,1.8-1.1,2.8-1.5
+		c5.6-2.4,12.2-1.3,17.6,1.4c5.4,2.8,9.8,7.1,14,11.5c6.4,7,12.4,14.3,17.9,22.1c0.9,1.3,1.8,2.6,2.7,3.9
+		c3.9,5.8,7.5,11.8,10.8,17.9c0.8,1.5,2.2,3.5,3.2,5.6l0.1-0.1c2.6,5.6,5.1,11.2,7.5,16.9c5.3,12.5,10.1,25.2,14.5,38
+		c4.4,12.8,8.2,25.8,11.7,38.9c3.4,13.2,6.4,26.5,8.9,39.9c1.2,6.7,2.4,13.5,3.4,20.2c0.5,3.3,1,6.7,1.4,10.1c0.2,1.7,0.4,3.4,0.6,5
+		C461.5,244.9,461.3,248.1,461.9,248.7z"/>
+	<path id="b2" d="M322.2,136.1c-2.9-0.6-5.7-1.5-8.4-2.7c0,2.4,0,4.8,0.1,7.2c0.1,20.6-0.7,41.3-3.8,61.7
+		c-5.1,34.3-17,68.3-39.3,94.9c0.7-0.9,0-5.7,0-6.9c0.2-19.6,1.6-39.3,4-58.8c2.4-19.6,6-39,10.6-58.1c4.1-16.8,9-33.5,14.7-49.9
+		c-2.1-2.2-4-4.5-5.8-7c-5.7,22.4-12.9,44.5-21.4,65.9c-9.5,23.9-22.4,48.9-45.7,59.8c11.4-36.1,21-72.8,30.5-109.4
+		c2.4-9.3,4.8-18.6,7.2-27.8c2.1-8.2,4.3-16.4,6.4-24.5c0.3-1.3,0.7-2.6,1-3.9c0.2-1.7,0.4-3.3,0.4-5c0-5.4-1.3-10.8-5.1-14.8
+		c-4.2-4.3-10.3-6-16.2-7.1c-25.9-5-53.1-3.6-78.4,3.9c-6,1.8-12,3.9-18.1,5.7c-14.8,18.7-29.9,37.3-48.9,51.6
+		c-20,15.1-45.1,25.2-70,22.3c18.3-4.4,31.9-19.5,43.6-34.2c4.8-6.5,10-12.8,15.5-18.7c4.8-5.2,10-9.6,15.5-14
+		c2-1.6,4.1-3.3,6.2-4.9c0.2-0.1,0.3-0.2,0.5-0.3c5.4-1.6,10.8-3.2,16.2-4.9c9.8-2.9,19.7-5.9,29.5-8.8c16.6-4.9,33.2-9.9,50.4-12
+		c25.1-3,50.2,0.4,75,5.7c2.1-3,4.5-5.8,7-8.5c4.8-5.1,11.7-9.9,18.3-7.4c6,2.2,8.4,9.4,9.7,15.7C330,72.1,329.5,104.9,322.2,136.1z
+		"/>
+	<path class="sb2" d="M133.5,56c-5.4,1.6-10.8,3.2-16.2,4.9c1.3-0.9,2.6-1.7,4-2.4C125.1,56.6,129.4,56.2,133.5,56z"/>
+	<path class="b2" d="M117.3,60.9c-0.2,0.1-0.3,0.2-0.5,0.3c-0.1,0-0.2-0.1-0.3-0.1C116.8,61,117,61,117.3,60.9z"/>
+</g>
+</svg> 
+
+
+    <div class="leafs-container">
+     <svg version="1.1" class="leaf5"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 71.7 191.8" xml:space="preserve">
+<path class="b1" id="b11" d="M9.4,98.1c0.9,11.1,4.9,22,8.9,32.8c7.6,20.3,15.1,40.6,22.7,60.9c3.6-2.4,4-7.6,3.3-12.2
+	c-0.7-4.5-2.3-9.2-1.5-13.6c1.2-6.3,7-11,6.3-17.6c-0.6-5.2-5.1-9.3-7.6-14.1c-3.9-7.7-2.3-16.5,0.8-23.9c3.1-7.4,7.4-14.3,8.7-22.3
+	c3.1-19-11.3-38.8-10.6-58.3c0.2-4.9,1.3-9.7,0.5-14.7c-0.4-2.5-1.5-5-3.1-7.1c-1.4-1.8-3.9-3.8-6.2-3.8c-0.4,2.8,0.4,5.6,0.2,8.4
+	c-0.2,3.3-1,6.6-1.7,9.7c-1.5,6.3-3.7,12.4-6,18.3c-2.3,6-4.8,11.9-7.2,17.9c-2.3,5.9-4.4,11.9-5.8,18.1c-1.4,6.1-2.3,12.5-2,19
+	C9.3,96.5,9.3,97.3,9.4,98.1z"/>
+</svg> 
+<svg version="1.1" class="leaf5a"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 71.7 191.8" xml:space="preserve">
+<use xlink:href="#b11" />
+</svg>
+<svg version="1.1" class="leaf5b"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 71.7 191.8" xml:space="preserve">
+<use xlink:href="#b11" />
+</svg>
+
+
+<svg version="1.1" class="leaf1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 66.3 230.5" xml:space="preserve">
+
+<g id="leaf1">
+	<g>
+		<path id="b2" d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+			c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+			c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+			c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+			c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6c5.9,11,7.8,23.7,7.5,36.2
+				c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5c8.2-31.8-0.4-65.4,2.4-98.2
+				c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5c2.6-3.4,5.7-6.4,8.9-9.2
+				c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4c1,1.7,1.5,3.7,2.2,5.6
+				C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+		<path  d="M31.8,53.6c-3.3,12.5-4,25.6-4.8,38.5c-1.3,19.8-4.9,38-7.1,57.7c-0.8,7.1,0.2,14.8-0.2,22.3
+			c-0.3,5.5-1.1,17.7-1.9,22.9c4.2-4.9,4-18.3,4.9-24.6s0.2-13.2,0.1-19.6c0-5.5,4.8-31.9,7-48.2c1.3-9.4,1.7-19,3-28.4
+			s2.2-16.5,3.5-25.9c0.4-2.6,1-7.2,1.3-9.9c0.3-2,1.1-8.7,1.9-10.6c-2.3,5.5-4.6,15.2-6.4,20.9c-0.3,0.8-0.5,1.6-0.8,2.5
+			C32.4,51.7,31.7,53.2,31.8,53.6z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6c5.9,11,7.8,23.7,7.5,36.2
+				c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5c8.2-31.8-0.4-65.4,2.4-98.2
+				c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5c2.6-3.4,5.7-6.4,8.9-9.2
+				c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4c1,1.7,1.5,3.7,2.2,5.6
+				C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+	
+		<path d="M29,158.4c2.3,6,4.9,12.2,4.3,18.6c1.2-6.4,0.3-12.9-1.4-19.2c-0.7-2.5-1.4-5-2.2-7.4
+			c-0.8-2.5-1.6-4.9-2.4-7.4c-0.2-0.6-0.3-1.3-0.6-1.8c-0.2-0.5-0.5,0.2-0.5,0.5c-0.2,1.1-0.3,2.1-0.3,3.2c0,2.2,0.3,4.4,0.8,6.5
+			c0.5,2.2,1.2,4.3,2,6.4C28.9,157.9,29,158.2,29,158.4z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6c5.9,11,7.8,23.7,7.5,36.2
+				c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5c8.2-31.8-0.4-65.4,2.4-98.2
+				c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5c2.6-3.4,5.7-6.4,8.9-9.2
+				c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4c1,1.7,1.5,3.7,2.2,5.6
+				C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M29.8,128.1c0.4,2.4,1.2,4.8,2.1,7.1c2.4,6.5,4.9,13.1,7.3,19.6c-0.5-6.9-2.3-13.7-5.1-19.9
+			c-1-2.1-2.1-4.2-2.8-6.4c-0.5-1.7-0.9-3.4-0.8-5.1c0-0.2,0-0.6-0.2-0.8c-0.3-0.2-0.3,0.1-0.3,0.4c-0.2,0.8-0.3,1.6-0.3,2.5
+			C29.6,126.2,29.7,127.1,29.8,128.1z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6c5.9,11,7.8,23.7,7.5,36.2
+				c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5c8.2-31.8-0.4-65.4,2.4-98.2
+				c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5c2.6-3.4,5.7-6.4,8.9-9.2
+				c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4c1,1.7,1.5,3.7,2.2,5.6
+				C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  M44.4,136.7c-0.2-2.1-0.5-4.3-0.9-6.4c-0.5-2.1-1.1-4.1-1.7-6.2c-0.7-2-1.5-4-2.4-6s-1.8-3.9-2.8-5.9
+			c-1-1.9-2-3.9-3-5.8c-0.1-0.2-0.4-0.7-0.7-0.7s0,0.8,0.1,1c0.3,1.1,0.5,2.2,0.8,3.3c0.6,2.2,1.2,4.3,1.9,6.5
+			c0.7,2.1,1.5,4.3,2.3,6.4s1.7,4.2,2.7,6.2c0.9,2,2,4.1,3,6.1c0.1,0.2,0.3,0.5,0.4,0.7C44.1,136.2,44.4,136.5,44.4,136.7z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6c5.9,11,7.8,23.7,7.5,36.2
+				c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5c8.2-31.8-0.4-65.4,2.4-98.2
+				c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5c2.6-3.4,5.7-6.4,8.9-9.2
+				c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4c1,1.7,1.5,3.7,2.2,5.6
+				C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M41,102.6c3.5,6.4,7.3,12.7,8.8,19.8c1.3-7.2-1.4-14.6-5-21c-1.3-2.3-2.8-4.6-4.3-6.8
+			c-1.5-2.3-2.9-4.5-4.3-6.8c-0.4-0.7-0.8-1.3-1.1-2c-0.2-0.3-0.4-0.7-0.5-1s-0.2-0.6-0.5-0.8c0,0.6,0.1,1.3,0.2,1.9
+			c0.1,0.6,0.2,1.3,0.4,1.9c0.3,1.3,0.7,2.5,1.1,3.8c0.9,2.5,1.9,4.9,3.1,7.2C39.6,100,40.3,101.3,41,102.6z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M43,82.4c3.2,6.6,6.7,13.1,10.2,19.6c-0.3-7.3-4.2-14-8-20.3c-1.5-2.5-2.9-4.9-4.2-7.5
+			c-1.2-2.6-2.3-5.2-2.9-8c-0.3-1.4-0.7-3.1-0.5-4.6c-0.3,2.8-0.1,5.6,0.5,8.3c0.6,2.8,1.6,5.5,2.7,8.1C41.6,79.5,42.3,81,43,82.4z"
+			/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M22.4,60c-1.8,1.9-3,4.3-3.3,6.9c1.7-2,3.4-4,5.1-6c0.8-1,1.7-2,2.5-3c0.1-0.2,0.6-0.8,0.3-1
+			c-0.2-0.2-1.2,0.5-1.4,0.6C24.4,58.2,23.4,59,22.4,60z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M20.9,81.8c-2.1,2.4-4.2,5.1-4.4,8.2c0-0.1,0.5-0.4,0.6-0.5c0.2-0.2,0.4-0.4,0.6-0.6c0.4-0.4,0.8-0.8,1.2-1.2
+			c0.8-0.8,1.5-1.7,2.2-2.7c1.3-1.9,2.4-3.9,3.2-6c0.4-1,0.8-2.1,1-3.2c-0.5,0.8-0.9,1.6-1.5,2.4s-1.3,1.6-1.9,2.4
+			C21.6,80.9,21.3,81.3,20.9,81.8z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M16.7,101.7c-1.9,3.6-2.8,7.7-2.8,11.8c0-0.3,0.2-0.6,0.3-0.8c0.1-0.3,0.2-0.5,0.3-0.8
+			c0.2-0.6,0.4-1.1,0.7-1.7c0.5-1.1,1-2.2,1.5-3.2c1.1-2.1,2.4-4.2,3.6-6.3c1.2-2.1,2.4-4.2,3.4-6.4c0.2-0.5,0.5-1.1,0.7-1.6
+			c0.1-0.3,0.2-0.6,0.3-0.8c0.1-0.2,0.2-0.6-0.1-0.4c-0.5,0.4-0.9,1-1.3,1.5s-0.9,1-1.3,1.5c-1.7,2-3.3,4.1-4.6,6.4
+			C17,101.2,16.8,101.4,16.7,101.7z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M15,125.2c-2.4,4.1-4.2,8.9-3.6,13.6c0.7-4.5,2.9-8.7,5-12.8c1.6-3.1,3.2-6.2,4.9-9.3
+			c0.1-0.3,0.9-1.4,0.5-1.7c-0.2-0.2-0.3,0.2-0.4,0.4c-0.2,0.4-0.4,0.7-0.7,1.1c-0.9,1.4-1.8,2.7-2.7,4.1
+			C17,122.1,15.9,123.6,15,125.2z"/>
+	</g>
+	<g id="b1">
+		<defs>
+			<path  d="M44.8,28.3c0.2,2,0.4,4,0.5,6c0.1,0.2,0.2,0.3,0.3,0.5c2.5,4.2,5.3,8.3,7.7,12.6
+				c5.9,11,7.8,23.7,7.5,36.2c-0.3,12.4-2.8,24.7-5.2,36.9c-4.6,22.9-9.2,46-18.9,67.2c-7.3,16.1-17.5,30.9-29.8,43.5
+				c8.2-31.8-0.4-65.4,2.4-98.2c1.6-19.4,7.3-38.5,6.4-58c-0.4-9.2-2.2-18.6,0.3-27.5c1.3-4.6,3.6-8.8,6.5-12.5
+				c2.6-3.4,5.7-6.4,8.9-9.2c0.9-0.8,3.9-3.9,6.3-4.7c-0.2-0.9-0.4-1.9-0.5-2.8c-0.7-3.6-1.5-7.3-2.4-10.9c-0.6-2.6,0.1-4.2,2.7-5.4
+				c1,1.7,1.5,3.7,2.2,5.6C42,14.3,43.9,21.2,44.8,28.3z"/>
+		</defs>
+
+		<path  d="M12.1,163.5c-0.1-0.3,0.1-0.9,0.1-1.3c0-0.4,0.1-0.9,0.1-1.3c0.1-0.9,0.2-1.8,0.3-2.6c0.3-1.8,0.6-3.5,1-5.3
+			c0.4-1.7,0.8-3.4,1.4-5.1c0.5-1.7,1.1-3.4,1.7-5.1c0.3-0.8,0.7-1.6,1-2.5c0-0.1,0.2-0.4,0.1-0.4c-0.1-0.1-0.3,0-0.4,0.1
+			c-0.3,0.2-0.5,0.6-0.7,0.8c-1,1.2-1.8,2.5-2.5,3.8c-0.7,1.4-1.3,2.8-1.8,4.2c-0.5,1.5-0.8,2.9-1,4.5c-0.2,1.5-0.3,3.1-0.2,4.6
+			s0.3,3,0.6,4.5C11.9,162.8,12,163.1,12.1,163.5z"/>
+	</g>
+</g>
+</svg>
+<svg version="1.1" class="leaf1a" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 66.3 230.5" xml:space="preserve">
+<use xlink:href="#leaf1" /> </svg>
+<svg version="1.1" class="leaf1b" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 66.3 230.5" xml:space="preserve">
+<use xlink:href="#leaf1" /> </svg>
+<svg version="1.1" class="leaf1c" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 66.3 230.5" xml:space="preserve">
+<use xlink:href="#leaf1" /> </svg>
+
+
+<svg version="1.1" class="leaf3"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 57.6 205.9" xml:space="preserve">
+<g id="leaf3">
+	<defs>
+		<path id="b4" d="M7.6,53.9c0.2,15,2.8,29.9,4.6,44.8c1.8,14.6,2.8,29.5,7,43.6c5.6,18.8,17,36.4,16.9,56.1
+			c10.2-19.9,13.5-42.5,16.6-64.6c2.1-14.5,4.1-29.1,2.7-43.6C54,74,48.2,58.5,42.6,43.2c-2.5-6.7-5-13.5-8.8-19.7
+			c-2.3-3.8-5.1-7.3-8.4-10.1c-2.8-2.4-6-4.1-8.8-0.8c-2.7,3.2-4,8.1-5.2,12C9.9,29.1,9,33.7,8.4,38.3C7.8,43.5,7.5,48.7,7.6,53.9z"
+			/>
+	</defs><use xlink:href="#b4" />
+	<clipPath id="b4">	<use xlink:href="#b4"  /></clipPath>
+	<path id="b3" d="M28.8,64.7c0.6,6.6,0.2,13.3,0,20c-0.5,14.1-0.7,27.9,1.2,41.9c1.4,10.7,4.6,21.5,6.7,32c1.2,6.1,1.4,9.9,3,16
+		c1.8-16.8-5.3-30.7-7.2-47.5c-1.6-13.9,0-28,0.1-42c0-4.3-0.1-8.7-0.4-13c-0.4-4.3-1.6-9.4-2.7-13.6c-1-4.2-1.9-7.6-3.8-11.5
+		c-0.4-0.8-1.6-3.9-2.2-1.7c-0.5,1.8,0.9,3.3,1.6,4.8c1.9,4,2.6,7.3,3.2,11.7C28.4,62.6,28.8,64.2,28.8,64.7z"/>
+	<pathid="b3" d="M24.7,136.6c-1.1,3.6-2,7.3-1.3,11c0.3-3.7,1.6-7.3,2.7-10.9c0.8-2.7,1.5-5.5,1.4-8.3c0-0.7-0.1-1.6-0.2-2.3
+		c-0.1,0.6-0.1,1.3-0.2,1.9c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.4-0.8,2.8-1.2,4.1C25.1,135,24.9,135.8,24.7,136.6z"/>
+	<path id="b3" d="M19.7,114.5c-2.2,3.7-3.8,8-3.2,12.2c0.6-3.6,1.8-7,3.6-10.1c1.3-2.2,2.8-4.2,4.1-6.3c1-1.6,1.8-3.4,2.1-5.3
+		c0.1-0.4,0.2-0.9,0.1-1.3c-0.1,0.1-0.2,0.4-0.2,0.5c-0.1,0.3-0.4,0.7-0.5,1c-0.4,0.8-0.9,1.5-1.4,2.2c-1,1.5-2,3-3,4.5
+		C20.7,112.8,20.2,113.6,19.7,114.5z"/>
+	<path id="b3" d="M21.9,89.6c-1.8,2.4-3.7,4.8-5,7.6c-1.3,2.7-2,5.8-1.5,8.8c0.5-4,2-7.9,4.4-11.2c1.3-1.9,2.8-3.5,4.1-5.4
+		c0.8-1.2,1.5-2.5,1.9-3.9c0-0.2,0.3-0.7-0.1-0.7c-0.2,0-0.5,0.6-0.7,0.7c-0.5,0.7-1,1.3-1.5,2C23,88.2,22.5,88.9,21.9,89.6z"/>
+	<path id="b3" d="M32.1,168.3c-0.1-0.2,0-0.5,0-0.8c0-0.3,0-0.5,0-0.8c0-0.5,0-1.1,0-1.6c0-1.1,0-2.1,0-3.2
+		c0-2.1,0.2-4.2,0.3-6.3c0.1-0.6,0.1-1.2,0.2-1.8c0-0.3,0.1-0.6,0.1-0.9c0-0.2,0.2-0.6,0.1-0.8c-0.4,0.9-0.7,2-0.9,3
+		c-0.2,1-0.4,2.1-0.5,3.2c-0.2,2.1-0.2,4.2,0.1,6.3C31.5,166,31.8,167.2,32.1,168.3z"/>
+	<path id="b3" d="M40.1,133c2.8,4,6.2,7.7,8.9,11.8c-0.8-2.6-1.9-5.1-3.2-7.5c-1.3-2.4-2.9-4.6-4.4-6.8
+		c-0.9-1.3-1.9-2.6-2.8-3.9c-0.5-0.7-0.9-1.3-1.4-2c-0.5-0.6-0.9-1.3-1.4-2c-0.1-0.1-0.4-0.4-0.5-0.3c-0.2,0.1,0,0.5,0,0.6
+		c0.2,0.7,0.4,1.4,0.6,2c0.5,1.4,1.1,2.7,1.7,3.9c0.7,1.3,1.4,2.5,2.2,3.7C39.9,132.7,40.1,132.9,40.1,133z"/>
+	<path id="b3" d="M44.7,106.2c3.5,3.2,7,6.8,8,11.4c-0.4-4.2-2.2-8.2-5-11.3c-1.6-1.8-3.6-3.4-5.5-4.9c-1.1-0.9-2.3-1.8-3.4-2.7
+		c-0.6-0.4-1.1-0.9-1.7-1.3c-0.1-0.1-0.5-0.4-0.6-0.3c-0.1,0.1,0.3,0.5,0.3,0.6c1.3,2.1,3.1,3.9,4.9,5.6c0.5,0.5,1,1,1.5,1.4
+		c0.3,0.2,0.5,0.5,0.8,0.7C44.1,105.7,44.5,105.9,44.7,106.2z"/>
+	<path id="b3" d="M42.4,78.5c3.4,3.4,7,6.9,8.8,11.3c-0.8-4.8-4-8.8-7.5-12.3c-1.2-1.1-2.4-2.2-3.6-3.3
+		c-1.2-1.1-2.4-2.2-3.6-3.4c-0.2-0.2-1.9-1.7-1.8-1.9c0.4,0.7,0.7,1.4,1.2,2.1c0.4,0.7,0.9,1.3,1.4,2c1,1.3,2.1,2.5,3.2,3.6
+		C41.1,77.2,41.8,77.9,42.4,78.5z"/>
+	<path id="b3" d="M20.7,58.1c-3.9,6.7-6.2,14.4-6.6,22.2c1.1-3.1,2.2-6.2,3.3-9.4c1.5-4.3,3-8.5,4.5-12.8c0.5-1.4,1-2.9,0.9-4.3
+		c0-0.2,0-0.4-0.1-0.5c0-0.1,0-0.3-0.1-0.2c-0.2,0.1-0.1,0.7-0.1,0.9c-0.1,0.7-0.4,1.4-0.7,2C21.5,56.7,21.1,57.4,20.7,58.1z"/>
+</g>
+</svg>
+
+<svg version="1.1" class="leaf3a"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 57.6 205.9" xml:space="preserve">
+<use xlink:href="#leaf3" /> </svg>
+
+
+<svg version="1.1" class="leaf2"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 51.9 252.5" xml:space="preserve">
+<path id="leaf2" class="b4" d="M44.4,48.7c3.9,18.7,3.6,37.9,3.3,57c-0.2,13.1-0.4,26.2-0.6,39.3c-0.3,19.1-0.6,38.4-4.6,57.1
+	s-12,37-25.7,50.4c3.2-22.6,1.5-45.9-4.8-67.8c-4.4-15.2-11.1-30.1-11.8-45.9c-0.8-17.6,5.8-34.5,11.8-51s11.3-34.2,8-51.5
+	c-1.2-6.4-3.6-12.5-4.7-18.8C14.4,12.7,14.3,7.6,16,3c0.3-0.8,0.7-2.5,1.5-2.9c0.9-0.4,1.8,0.7,2.4,1.2c1.8,1.7,3.5,3.4,5.1,5.3
+	c6.5,7.6,11.3,16.5,14.8,25.8C41.7,37.7,43.2,43.1,44.4,48.7z"/>
+</svg>
+<svg version="1.1" class="leaf2a"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 51.9 252.5" xml:space="preserve">
+<use xlink:href="#leaf2" /> </svg>
+
+
+<svg version="1.1" class="flower1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 68.4 215.5" xml:space="preserve">
+<g id="flower1">
+	<path id="red2" d="M13.1,191.2c-1.7,1.4-2.8,3.6-3.3,5.8c-0.6,2.2-0.7,4.6-0.7,6.9c-0.1,1.6-0.1,3.3,0.7,4.7
+		c0.9,1.6,2.8,2.4,4.6,2.1c1.8-0.3,3.3-1.4,4.5-2.8s2-3.1,2.8-4.8c0.8-1.6,1.5-3.2,1.9-5c0.4-1.7,0.4-3.7-0.3-5.3
+		c-0.6-1.4-1.9-2.6-3.4-2.8c-0.3,0-0.6,0-0.9,0c-0.4,0-0.7-0.2-1.1-0.3c-0.8-0.1-1.6-0.1-2.3,0.1C14.7,190.1,13.8,190.6,13.1,191.2z
+		"/>
+	<path id="red1" d="M12.1,190.3c-1.8,1.3-3.1,3.3-3.8,5.5s-1,4.5-1.3,6.8c-0.2,1.6-0.4,3.3,0.3,4.7c0.8,1.7,2.6,2.6,4.4,2.5
+		s3.4-1.1,4.7-2.4s2.3-2.9,3.2-4.6c0.9-1.5,1.8-3.1,2.3-4.8s0.7-3.6,0.1-5.3c-0.5-1.5-1.7-2.8-3.1-3.1c-0.3-0.1-0.6,0-0.9-0.1
+		c-0.4-0.1-0.7-0.3-1.1-0.4c-0.8-0.2-1.6-0.2-2.3-0.1C13.7,189.4,12.9,189.8,12.1,190.3z"/>
+	<path id="b4" d="M59.5,18.5C53.2,77,41.2,134.8,23.8,191l0.1,0.1c0,0,0,0.1,0.1,0.1c0.9,1.5,1.2,3.4,1,5.1
+		c-0.2,1.8-0.7,3.5-1.2,5.2c-0.2,0.5-0.3,1.1-0.7,1.5c-0.3,0.5-0.8,0.8-1.4,0.8s-1.1-0.4-1.4-0.9s-0.4-1.1-0.5-1.6
+		c-0.5-2.9-0.7-5.8-0.6-8.7c-1.2,3.1-3.7,5.7-6.9,6.7c-1.6,0.5-3.6,0.5-4.7-0.7c-0.6-0.7-0.9-1.8-0.7-2.7c0.1-1,0.5-1.9,1.1-2.7
+		c0.6-1,1.3-1.9,2.2-2.6c1.5-1.4,3.3-2.4,5.3-3c0.8-0.3,1.7-0.4,2.5-0.5c2.1-5.9,4.2-11.8,6.2-17.8c2.1-6.3,4-12.6,5.9-18.9
+		c1.9-6.3,3.6-12.7,5.3-19.1c1.7-6.4,3.2-12.8,4.7-19.3c1.5-6.4,2.8-12.9,4.1-19.4c1.2-6.5,2.4-13,3.4-19.5s2-13.1,2.8-19.7
+		c0.8-6.5,1.6-13.1,2.2-19.7c0.6-6.6,1.1-13.2,1.5-19.8c0.1-1.6,0.2-3.3,0.3-4.9c0.1-1.3-0.2-3.5,0.5-4.6c1.6-2.5,4.3,3.7,4.6,4.9
+		C60.1,12.2,59.8,15.4,59.5,18.5z"/>
+</g>
+</svg>
+
+<svg version="1.1" class="flower1a" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 68.4 215.5" xml:space="preserve">
+<use xlink:href="#flower1" /> </svg>
+
+
+ 
+
+
+    </div>
+    <div class="catbody"></div>
+    <svg version="1.1" class="cat-tail"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 183.1 533.5"  xml:space="preserve"><path class="st0" d="M96.7,356c-14.7-43.4-40.1-82.4-59-124.2S6.3,142.5,19.4,98.5C30.9,59.9,62.7,28,101.2,16.3
+	c22.2-6.7,50.4-5,63,14.5c9.4,14.4,6.6,34.1-2.1,48.9c-8.7,14.8-22.4,25.9-35.5,37.1s-26.3,23-33.5,38.7c-10.9,23.6-6,51.7,4.6,75.4
+	s26.7,44.6,39.1,67.4c31.3,57.4,38.8,127.3,20.3,190c-3.5,11.9-8.7,24.5-19.7,30.3c-9,4.8-22.4,1.1-28.5-7c-5.3-6.9-2.5-17-1.3-24.8
+	c4.5-28,4.5-56.6,0.3-84.6C105.5,386.6,101.8,371.1,96.7,356z"/>
+          </svg>
+  <div class="cathead">
+          <div class="left-ear">
+          <div class="left-earl"></div>
+          <div class="left-eard"></div> 
+          <div class="right-ear"></div>
+          <div class="right-earl"></div>
+          <div class="right-eard"></div></div>
+   
+            <div class="cathead2"></div>
+            <div class="left-eye"></div>
+            <div class="lpupil"></div>
+            <div class="left-eye-spark"></div>
+            <div class="right-eye"></div>
+            <div class="rpupil"></div>
+            <div class="right-eye-spark"></div>
+          <div class="catnose"></div>
+          <div class="cat-mouth"></div>
+          
+     </div>
+
+<!-- MENU==============================================-->
+<svg version="1.1" class="menu-containersvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 555.1 95.5" style="enable-background:new 0 0 555.1 95.5;" xml:space="preserve">
+<path class="brown-dark" d="M555.1,33.7c0,0.6,0,1.2,0,1.7c-1,28.8-26.7,50.8-57.4,54.4C486,91.7,473.8,91.4,462,90
+  c-17.3-2.2-34.1-6.8-51.2-10.4c-2-0.4-4.1-0.9-6.1-1.3c-8.3-1.6-16.7-3.1-25.1-4.3c-8.4-1.2-16.8-2.2-25.3-2.9
+  c-3.9-0.3-7.8-0.6-11.8-0.9c-8-0.5-16,0.2-23.8,2L277.6,81c-22.7,5.3-67.7,10.2-91.2,11L78.5,92.3c-17,0-33.8-3.9-48-11.9
+  C12.8,70.5,0,55.2,0,35.6c0-7.2,3.4-13.8,8.9-18.5S22,9.4,30.3,9.4H527C542.5,9.4,555.1,20.3,555.1,33.7z"/>
+<path class="brown-light" d="M555.1,28c-1.3,37.3-43.9,63.1-85.3,52.5L449,75.2l-60.9-15c-15.8-3.9-32.4-3.9-48.2-0.2L299,69.5
+  c-22.7,5.3-89.1,14.2-112.7,15.1L78.5,84.9c-17,0-33.8-3.9-48-11.9C12.8,63.1,0,47.8,0,28.2l0,0C0,13.7,13.6,2,30.3,2H527
+  c15.6,0,28.2,10.9,28.2,24.3l0,0C555.1,26.9,555.1,27.5,555.1,28z"/>
+</svg>
+
+<div class="button1">
+
+  <svg class="icon1" viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg"><path d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"/><path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"/> <filter id="inset-shadow"></svg>
+  <input type="checkbox" class="checkbox">  
+ <div class="info1">
+  <p class="a1">Hi!</p>  
+  <p class="a2" >I'm CRIS</p>   <p class="a3" >a Ghibli fan!</p>
+  <p class="a4">This is my first exploratory project I made to test out my skills in creating a character using CSS and HTML.</p>
+ <p class="a5">This was created when I self-studied HTML. You can view my codes in Codepen.</p>
+  <p class="a6">Thanks! </p> 
+</div>
+ <div class="woah">
+   <div class="woah1"></div> <div class="woah2"></div>
+</div>
+</div>
+
+  <a href="https://codepen.io/crizvill/pen/dyRXmaM" target="_blank" class="button2"> 
+  <svg class="icon2" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m439.54 68.7h-367.08c-39.95 0-72.46 32.51-72.46 72.47v229.66c0 39.96 32.51 72.47 72.46 72.47h367.08c39.95 0 72.46-32.51 72.46-72.47v-229.66c0-39.96-32.51-72.47-72.46-72.47zm-253.73 115.29-76.23 76.23 67.79 67.79c5.86 5.86 5.86 15.36 0 21.21-5.85 5.86-15.35 5.86-21.21 0l-78.4-78.4c-5.86-5.86-5.86-15.35 0-21.21l86.83-86.83c5.86-5.86 15.36-5.86 21.22 0 5.85 5.85 5.85 15.35 0 21.21zm123.73-35.29-79.32 224.59c-2.76 7.82-11.33 11.91-19.14 9.15s-11.91-11.33-9.15-19.14l79.32-224.59c2.76-7.81 11.32-11.91 19.14-9.15 7.81 2.76 11.91 11.33 9.15 19.14zm124.7 113.69-86.83 86.83c-5.86 5.86-15.36 5.86-21.22 0-5.85-5.85-5.85-15.35 0-21.21l76.23-76.23-67.79-67.79c-5.86-5.86-5.86-15.36 0-21.21 5.85-5.86 15.35-5.86 21.21 0l78.4 78.4c5.86 5.86 5.86 15.35 0 21.21z"/><filter id="inset-shadow"></g></svg>
+       </a>
+ 
+<div class="button3">
+  <svg class="icon3" id="heart" viewBox="0 -28 512.00002 512" xmlns="http://www.w3.org/2000/svg">
+  <filter id="inset-shadow">
+    <feOffset
+            dx='.5'
+            dy='0'
+          />
+  <feGaussianBlur
+            stdDeviation='.1'
+            result='offset-blur'
+          />
+    <feComposite
+            operator='out'
+            in='SourceGraphic'
+            in2='offset-blur'
+            result='inverse'
+          />
+    <feFlood
+            flood-color='black'
+            flood-opacity='.3'
+          />
+    <feComposite
+            operator='in'
+            in='color'
+            in2='inverse'
+            result='shadow'
+          />
+    <feComposite
+            operator='over'
+            in='shadow'
+            in2='SourceGraphic'
+          /> 
+  </filter><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/></svg>
+
+</div>
+<div class="text1"> creator's note</div>
+<div class="text2">view the code </div>
+<div class="text3">show some love</div>
+<div class="slider"></div>
+<svg version="1.1" class="slidersvg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 257 149.8" xml:space="preserve"><path class="st0" d="M35.9,70.7c1.5,2.8,2.9,5.7,4.1,8.7C38.4,76.5,37.1,73.7,35.9,70.7z"/>
+<path class="st0" d="M219.3,79.5c1.2-3.1,2.6-6.1,4.2-8.9C222.2,73.6,220.8,76.6,219.3,79.5z"/>
+<path class="st1" d="M257,0v33.4c-13.6,0.2-25.3,10.1-30.6,24.5c0,0,0,0,0,0c-0.8,2.1-1.4,4.3-1.9,6.6
+	c-13.1,40.1-50.8,69.1-95.3,69.1c-45.2,0-83.4-29.9-95.9-71c0,0,0-0.1,0-0.1c-0.2-0.9-0.5-1.8-0.8-2.7c0,0,0,0,0-0.1
+	c-5-15.4-17.2-26.3-31.6-26.3v-0.1H0V0H257z"/>
+<path class="st2" d="M33.3,62.4c-0.3-0.9-0.5-1.8-0.8-2.7C32.8,60.5,33.1,61.4,33.3,62.4z"/>
+<path class="st2" d="M226.5,57.9c-0.5,2.2-1.2,4.4-1.9,6.6C225.1,62.2,225.7,60,226.5,57.9z"/>
+</svg>
+<div class="box1"></div> <div class="box2"></div>
+<div class="speech1"></div>
+<svg version="1.1" class="speech1"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 366" xml:space="preserve"><path id="speechballoon" d="M603.2,163.8c0,8.8-1.3,17.4-3.8,25.8c-9.4,31.3-35.6,59.6-73.5,82l22.8,46.9c1.2,2.5,1.9,5.3,1.9,8.1 c0,9.1-6.5,16.9-15.5,18.4l-3.6,0.6c-6.5,1.1-13.1,0.5-19.3-1.7l-4.5-1.6l-74.4-26.8l0,0l-11.3-4.1c-40.8,5.5-80.5,6.5-121.7,6.5 c-164.2,0-291.7-65.6-291.7-154.1S136.3,13.4,300.4,13.4c118.2,0,225.8,27.4,273.7,81.2C592.9,115.5,603.2,139,603.2,163.8z"/>  <p class="text7">I love cats!</p>
+</svg>
+<svg version="1.1" class="speech2"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 366" xml:space="preserve"><use xlink:href="#speechballoon" />
+   <p class="text8">Visit Codepen.io</p></svg>
+<svg version="1.1" class="speech3"  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 366" xml:space="preserve"><use xlink:href="#speechballoon" />
+   <p class="text9">Thank You!</p></svg>
+<div class="grin"></div>
+<div class="smile"></div>
+<svg class="heart"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#eyeheart" /></svg>
+<svg class="heart-a"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#eyeheart" /></svg>
+<svg class="heart-b"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#eyeheart" /></svg>
+<svg class="heart-c"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#eyeheart" /></svg>
+
+
+
+      
+    
+<!--GIRL CHARACTER=========================================--> 
+
+          <div class="l-ribbon">
+               <div class="ldark"></div> </div>
+          <div class="r-ribbon"> 
+               <div class="rdark"></div> </div>
+          <div class="center"></div>
+    
+      <div class="hair-1"></div>
+       <div class="hair-2"></div>
+      <div class="hair-3"></div> 
+          <div class="body">
+          </div> 
+          <div class="bodydark"></div>
+
+          <div class="neck"></div> 
+          <div class="neckdark"></div>  
+          <div class="r-ear"></div> 
+          <div class="rd-ear"></div> 
+          <div class="l-ear"></div> 
+          <div class="ld-ear"></div> 
+    
+          <div class="head"></div> 
+          <div class="hair-4">
+            <div class="hair-9"></div></div>
+          <div class="hair-5">
+            <div class="hair-8"></div></div>
+          <div class="hair-6">
+             <div class="hair-7"></div></div>
+           
+        <div class="ld-eye">
+          <div class="ld-eye2"></div>
+          <div class="rd-eye"></div>
+          <div class="l-eye"></div>
+          <div class="r-eye"></div>
+          <div class="l-pupil">
+             <div class="l-darkpupil"></div>
+             <div class="r-pupil"></div>
+             <div class="r-darkpupil"></div>
+             <div class="r-spark"></div>
+             <div class="l-spark"></div> 
+             </div>
+        </div>
+        <div class="pupils">
+          <div class="pupil1"></div>
+          <div class="pupil2"></div>
+        </div>
+<!-- expressions that activate on click========-->
+           
+           <div class="r-brow"></div>
+            <div class="l-brow"></div>
+    
+    <div class="lip">
+          <div class="mouth"></div> 
+          <div class="lip-highlight"></div>
+         </div>    
+
+     <div class="smile">
+          <div class="smile1"></div>
+          <div class="smile2"></div>
+          </div>
+    <div class="grin">
+          <div class="grin1"></div>
+          <div class="grin2"></div>
+    </div>
+    <div class="eyes-closed">
+          <div class="closed-eyes1"></div>
+          <div class="closed-eyes2"></div>
+    </div>
+     <div class="heart-eyes">
+          <div class="heart-eyes1">
+           <svg class="heart1"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><path id="eyeheart"  d="m340 0c-44.773438.00390625-86.066406 24.164062-108 63.199219-21.933594-39.035157-63.226562-63.19531275-108-63.199219-68.480469 0-124 63.519531-124 132 0 172 232 292 232 292s232-120 232-292c0-68.480469-55.519531-132-124-132zm0 0" /></svg>
+          </div>
+          <div class="heart-eyes2">
+            <svg class="heart1"  height="464pt" viewBox="0 -20 464 464" width="464pt" xmlns="http://www.w3.org/2000/svg"><path id="eyeheart"  d="m340 0c-44.773438.00390625-86.066406 24.164062-108 63.199219-21.933594-39.035157-63.226562-63.19531275-108-63.199219-68.480469 0-124 63.519531-124 132 0 172 232 292 232 292s232-120 232-292c0-68.480469-55.519531-132-124-132zm0 0"/></svg>
+          </div>
+    </div>
+           <div class="r-blush"></div>
+           <div class="l-blush"></div>
+            <div class="nose"></div> 
+            <div class="nose-highlight"></div>
+          <div class="l-armsleeve"></div>
+          <div class="ld-armsleeve"></div>    
+          <div class="r-armsleeve"></div>
+          <div class="rd-armsleeve"></div> 
+    <div class="r-arm"> 
+          <div class="r-hand1"></div>
+        </div>       
+    <div class="l-arm"></div> 
+          <div class="l-hand1"></div>
+          <div class="l-hand2"></div>
+           
+   <div class="speech-balloon">
+      <div class="sb1"></div>
+      <div class="sb2"></div>
+      <div class="sb3"></div>
+      <div class="sb4"> 
+          <p class="hello">HELLO!</p> 
+           </div>  
+
+
+
+
+
+</div>
+<!--END of the CHARACTER========================--> 
+
+
+ </div><!--KIKI-CAT========================-->
+<div class="leaf-background">
+
+</div>
+ </div><!--OVERALL-CONTAINER========================-->
+</html>
